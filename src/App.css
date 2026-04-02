@@ -1,0 +1,11 @@
+.app{
+    height: 100vh;
+}   
+.app.light{
+    background-image: url("./assets/img/light.png");
+    background-size: cover;
+    background-position: center;
+}
+.app.dark{
+    background-image: url("./assets/img/dark.png");
+}

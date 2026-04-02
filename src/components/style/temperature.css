@@ -1,0 +1,125 @@
+.temperature{
+    position: relative;
+    padding: 10px;
+    width: 450px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    box-shadow: -4px 4px 50px black inset,
+    -7px -20px 50px black inset;
+    overflow: hidden;
+}
+.temperature::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../assets/img/cardImage.png);
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: 1;
+}
+.temperature::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-image: url(../../assets/img/cardImagecloud.png);
+    background-size: contain;
+    background-position: 0% 0%;
+    filter: blur(5px);
+    z-index: 1;
+    transform: translateY(-20px);
+    animation: moveCloud 20s linear infinite alternate; 
+}
+@keyframes moveCloud {
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 100% 0%;
+    }
+}
+.temperature > div:not(:last-child){
+    border-bottom: 1px solid #bcbcbca0;
+}   
+.temperature > div{
+    position: relative;
+    z-index: 2;
+}
+.temperature .city{
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 600;
+}
+.temperature .city .icon{
+    font-size: 35px;
+}
+.temperature .infoTemp .temp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.temperature .infoTemp .temp {
+    font-size: 50px;
+    font-weight: 600;
+}
+.temperature .infoTemp .temp .icon{
+    display: flex;
+    align-items: flex-end;
+}
+.temperature .infoTemp .temp .icon .iconsm{
+    font-size: 35px;
+    color: #e6e6e6;
+    transform: translateX(15px);
+}
+.temperature .infoTemp .temp .icon .iconlg{
+    font-size: 50px;
+}
+.temperature .infoTemp .weather{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.temperature .details{
+    display: flex;
+    flex-direction: column;
+}
+.temperature .details span:first-child{
+    border-bottom: 1px solid #bcbcbca0;
+}
+@media (max-width:500px) {
+    .temperature{
+        width: 100%;
+    } 
+}
+@media (max-width:350px) {
+    .temperature .city{
+        font-size: 18px;
+    }
+    .temperature .city .icon{
+        font-size: 25px;
+    }
+    .temperature .infoTemp .temp {
+        font-size: 30px;
+    }
+    .temperature .infoTemp .temp .icon .iconsm{
+        font-size: 20px;
+        transform: translateX(10px);
+    }
+    .temperature .infoTemp .temp .icon .iconlg{
+        font-size: 30px;
+    }
+    .temperature .infoTemp .weather{
+        font-size: 16px;
+    }
+}

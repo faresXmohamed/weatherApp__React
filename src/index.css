@@ -1,0 +1,66 @@
+@font-face {
+    font-family: cairo;
+    src: url(./fonts/cairo/Cairo-ExtraLight.ttf) format("truetype");
+    font-weight: 200;
+    font-display: swap;
+}
+@font-face {
+    font-family: cairo;
+    src: url(./fonts/cairo/Cairo-Light.ttf) format("truetype");
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: cairo;
+    src: url(./fonts/cairo/Cairo-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: cairo;
+    src: url(./fonts/cairo/Cairo-Medium.ttf) format("truetype");
+    font-weight: 500;
+    font-display: swap;
+}
+@font-face {
+    font-family: cairo;
+    src: url(./fonts/cairo/Cairo-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+    font-display: swap;
+}
+@font-face {
+    font-family: cairo;
+    src: url(./fonts/cairo/Cairo-Bold.ttf) format("truetype");
+    font-weight: 700;
+    font-display: swap;
+} 
+@font-face {
+    font-family: cairo;
+    src: url(./fonts/cairo/Cairo-ExtraBold.ttf) format("truetype");
+    font-weight: 800;
+    font-display: swap;
+}
+@font-face {
+    font-family: cairo;
+    src: url(./fonts/cairo/Cairo-Black.ttf) format("truetype");
+    font-weight: 900;
+    font-display: swap;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cairo, sans-serif;
+}
+.item-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loding{
+    font-size: 22px;
+    padding: 4px 10px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #9e9e9e81;
+}

@@ -1,0 +1,63 @@
+.search{
+    gap: 10px;
+}
+.search .searchInbut label{
+    color: #d3d3d3;
+}
+
+ @media (max-width: 500px) {
+    .search .inputSelect {
+        width: 200px;
+    }
+    .search .searchInbut{
+        width: 100%;
+    }
+    .search .searchInbut label{
+        font-size: 14px;
+        line-height: 1;
+    }
+    .search .searchInbut .Mui-focused  {
+        line-height: 1.6;
+        font-size: 13px;
+    }
+    .MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-inputAdornedEnd.MuiAutocomplete-input.MuiAutocomplete-inputFocused.css-1dune0f-MuiInputBase-input-MuiOutlinedInput-input{
+        padding: 4px 0px;
+        font-size: 12px;
+    }
+    .search .submit{
+        padding: 5px;
+        font-size: 12px;
+    }  
+    .search .submit .icon{
+        font-size: 16px;
+    } 
+ }
+
+ @media (max-width: 335px) {
+    .search .inputSelect {
+        width: 150px;
+    }
+    .search .searchInbut{
+        width: 100%;
+    }
+    .search .searchInbut label{
+        font-size: 10px;
+        line-height: 1;
+    }
+    .search .searchInbut .Mui-focused  {
+        line-height: 1.6;
+        font-size: 13px;
+    }
+    .MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-inputAdornedEnd.MuiAutocomplete-input.MuiAutocomplete-inputFocused.css-1dune0f-MuiInputBase-input-MuiOutlinedInput-input{
+        padding: 3px;
+        font-size: 13px;
+    }
+    .search .submit{
+        padding: 8px;
+        font-size: 10px;
+        line-height: 1.6;
+    }  
+    .search .submit .icon{
+        font-size: 13px;
+    } 
+ }

@@ -1,0 +1,118 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    box-shadow: 0px 1px 50px rgba(0, 0, 0, 0.1);
+}
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 400;
+}
+header h1 .cloud,
+header h1 .sun {
+position: relative;
+}
+header h1 .cloud {
+    color: #fff;
+    transform: translate(32px, 8px);
+    z-index: 100;
+    font-size: 45px;
+
+}
+header h1 .sun {
+    color: gold;
+    transform: translate( -7px , 1px);
+    z-index: 99;
+    font-size: 40px;
+}
+header .mode {
+    position: absolute;
+    right: 20px;
+    background-color: black;
+    color: gray;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .mode .lightMode,
+header .mode .darkMode {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    opacity: .8;
+}
+header .mode .lightMode:hover,
+header .mode .darkMode:hover {
+    opacity: 1;
+}
+header .mode .darkMode {
+    position: relative;
+}
+header .mode .lightMode.active {
+    color: gold;
+}
+header .mode .darkMode.active {
+    color: #415aff;
+}
+header .mode .darkMode::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: gray;
+    left: 0;
+}
+@media (max-width:550px) {
+    header{
+        justify-content: flex-start;
+        padding: 15px 8px;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+    header h1 .cloud {
+        transform: translate(20px, 5px);
+        font-size: 30px;
+    }
+    header h1 .sun {
+        transform: translate(-5px, 0px);
+        font-size: 25px;
+    }
+    header .mode{
+        right: 10px;
+    }
+    header .mode .lightMode,
+    header .mode .darkMode {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+}
+
+@media (max-width:400px) {
+    header h1 {
+        font-size: 16px;
+    }
+    header h1 .cloud {
+        transform: translate(15px, 3px);
+        font-size: 25px;
+    }
+    header h1 .sun {
+        transform: translate(-3px, 0px);
+        font-size: 20px;
+    }
+        header .mode .lightMode,
+    header .mode .darkMode {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+}
